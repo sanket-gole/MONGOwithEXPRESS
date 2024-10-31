@@ -1,0 +1,130 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+/* Container */
+
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* Title */
+
+.title {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+/* Form Styling */
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Input Fields */
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+    border-color: #764ba2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Textarea */
+
+.textarea-field {
+    resize: vertical;
+    height: 100px;
+}
+
+
+/* Submit Button */
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #667eea;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #764ba2;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+    .submit-btn {
+        font-size: 14px;
+    }
+}

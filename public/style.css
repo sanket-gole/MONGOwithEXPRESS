@@ -1,0 +1,201 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    color: #00e676;
+    margin-bottom: 20px;
+}
+
+.add-chat-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.add-chat-btn {
+    background: #00e676;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.add-chat-btn:hover {
+    background: #00b248;
+    transform: scale(1.05);
+}
+
+.chat-box {
+    background: #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.from,
+.to,
+.message-title {
+    font-weight: bold;
+    color: #00e676;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.from span,
+.to span {
+    color: #ffeb3b;
+}
+
+
+/* Message Container Styling */
+
+.message {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+
+/* Message Title */
+
+.message-title {
+    font-size: 16px;
+    color: #00e676;
+    font-weight: bold;
+    text-align: left;
+    /* Align title from the left */
+}
+
+
+/* Message Text */
+
+.message-text {
+    font-size: 20px;
+    /* Larger font size for the message */
+    font-weight: 900;
+    /* Maximum font weight */
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+    /* Ensure the message text starts from the left */
+    margin-top: 5px;
+}
+
+
+/* Button Group */
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+    margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #c2185b;
+    transform: scale(1.05);
+}
+
+.divider {
+    border: 1px solid #444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-box p:last-of-type {
+    text-align: right;
+    font-size: 12px;
+    color: #ccc;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
